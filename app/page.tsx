@@ -7,6 +7,7 @@ import Product from "./components/product";
 import Benefit from "./components/benefit";
 import Touch from "./components/touch";
 import ProductListing from "./productlisting/page";
+import ProductList from "./components/ProductList";
 
 
 export default function Home() {
@@ -19,7 +20,8 @@ export default function Home() {
    <Benefit />
    <Touch />
 <ProductListing/>
-   
+<ProductList/>
+
 
    </>
   );

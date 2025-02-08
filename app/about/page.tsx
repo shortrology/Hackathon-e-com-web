@@ -29,7 +29,7 @@ const About = () => {
         </div>
         <div className="w-full md:w-2/5">
           <img
-            src="/images/About main.png"
+            src="/images/about-main.png"
             alt="About main"
             className="w-full transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
           />

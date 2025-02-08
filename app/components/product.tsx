@@ -1,13 +1,13 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/navigation';
+
 
 const Product = () => {
   const router = useRouter();
-
   const handleNavigation = () => {
-    router.push('/productlisting'); // Navigates to the "/about" page
+    router.push('/productlisting');
   };
 
   return (

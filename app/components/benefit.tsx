@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Benefit = () => {
   return (
@@ -20,9 +21,11 @@ const Benefit = () => {
                   placeholder="your@email.com"
                   className="p-4 bg-[#F9F9F9] w-full md:w-[354px] h-[56px] outline-none mb-4 md:mb-0"
                 />
-                <button className='p-2 bg-[#2A254B] text-white w-full md:w-[118px] h-[56px]'>
-                  Signup
-                </button>
+                <Link href="/auth/signup">
+                  <button type="button" className='p-2 bg-[#2A254B] text-white w-full md:w-[118px] h-[56px]'>
+                    Signup
+                  </button>
+                </Link>
               </form>
             </div>
           </div>
