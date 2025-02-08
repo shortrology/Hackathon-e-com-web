@@ -49,7 +49,9 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
       return notFound();
     }
 
-    return <ProductDetail product={product} />;
+    return <ProductDetail product={product} params={{
+      id: ''
+    }} />;
   } catch (error) {
     console.error('Error fetching product:', error);
     return notFound();

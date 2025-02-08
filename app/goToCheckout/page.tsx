@@ -17,7 +17,7 @@ const Checkout = () => {
       alert("Please select a payment method.");
     } else {
       alert(`Processing payment with ${paymentMethod}`);
-      router.push("/goTocheckout/Confirmation"); 
+      router.push("/goTocheckout/confirmation"); 
     }
   };
 
@@ -47,7 +47,7 @@ const Checkout = () => {
           {/* Submit Button */}
           <div className="mt-10 flex justify-center">
             <button
-              className="bg-custom-purple text-white py-3 px-6 w-full sm:w-56 rounded-md text-lg"
+              className="bg-custom-purple text-black py-3 px-6 w-full sm:w-56 rounded-md text-lg"
               onClick={handleSubmit}
             >
               Complete order
@@ -60,7 +60,4 @@ const Checkout = () => {
 };
 
 export default Checkout;
-
-
-
 

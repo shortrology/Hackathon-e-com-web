@@ -1,10 +1,13 @@
 "use client"; 
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @next/next/no-img-element */
+
 import { useState } from "react";
 import { useRouter } from "next/navigation"; 
 
 const Cart = () => {
-  const [cartItems,] = useState([
+  const [cartItems, setCartItems] = useState([
     {
       id: 1,
       name: "Graystone vase",
@@ -30,7 +33,7 @@ const Cart = () => {
   };
 
   const handleCheckout = () => {
-    router.push("/goToCheckout");
+    router.push("/goTocheckout");
   };
 
   return (
@@ -77,7 +80,8 @@ const Cart = () => {
           <h1 className="inline text-xl sm:text-2xl font-semibold">£{calculateSubtotal()}</h1>
           <p className="text-sm mt-4">Taxes and shipping are calculated at checkout</p>
           <button
-            className="bg-custom-purple h-12 sm:h-14 mt-6 w-full sm:w-56 rounded-sm text-white"
+            className="bg-custom-purple h-12 sm:h-14 mt-6 w-full sm:w-56 rounded-sm text-black "
+             
             onClick={handleCheckout} 
           >
             Go to checkout
@@ -89,3 +93,7 @@ const Cart = () => {
 };
 
 export default Cart;
+
+
+
+
