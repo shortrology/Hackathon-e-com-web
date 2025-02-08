@@ -1,13 +1,13 @@
 'use client'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React from 'react'
 import { useRouter } from 'next/navigation';
-
 
 const Product = () => {
   const router = useRouter();
+
   const handleNavigation = () => {
-    router.push('/productlisting');
+    router.push('/productlisting'); // Navigates to the "/productlisting" page
   };
 
   return (
@@ -26,11 +26,12 @@ const Product = () => {
                 height={800}
                 width={800}
                 alt='sofa'
+                priority={true}
                 className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The popular suede sofa</p>
-                <p>$980</p>
+                <p>$900</p>
               </div>
             </div>
 
@@ -41,11 +42,12 @@ const Product = () => {
                 height={800}
                 width={800}
                 alt='chair'
+                priority={true}
                 className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The Dandy chair</p>
-                <p>$250</p>
+                <p>$300</p>
               </div>
             </div>
 
@@ -56,11 +58,12 @@ const Product = () => {
                 height={900}
                 width={900}
                 alt='chair'
+                priority={true}
                 className='w-full h-[80%] object-cover transition-transform duration-300 ease-in-out group-hover:scale-105'
               />
               <div className='mt-4 text-[#2A254B]'>
                 <p className='py-2'>The Dandy chair</p>
-                <p>$250</p>
+                <p>$200</p>
               </div>
             </div>
 
@@ -75,7 +78,8 @@ const Product = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
 export default Product;
+

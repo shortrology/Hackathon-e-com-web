@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation"; 
 
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([
+  const [cartItems,] = useState([
     {
       id: 1,
       name: "Graystone vase",
